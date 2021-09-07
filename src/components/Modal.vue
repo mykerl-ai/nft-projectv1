@@ -11,7 +11,7 @@
 
 <template>
   <transition name="modal-fade">
-    <div @click.self="close" class="modal-backdrop">
+    <div @click.self="close" class="modal-backdrop z-10">
       <div class="modal"
         role="dialog"
         aria-labelledby="modalTitle"
@@ -49,7 +49,7 @@
 
 <style>
   .modal-backdrop {
-    position: fixed;
+   position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -58,8 +58,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-backdrop-filter: blur( 8.5px );
--webkit-backdrop-filter: blur( 8.5px );
   }
 
   .modal {
