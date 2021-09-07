@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+     background: #123B53;;
+     position: relative;
+    /*background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); */
+}
+
+.top {
+    position: absolute;
+  width: 553.2px;
+  height: 379.5px;
+  left: -139px;
+  top: 130.11px;
+  
+  background: rgba(169, 222, 238, 0.35);
+  filter: blur(190px);
+  transform: rotate(-11.51deg);
+  }
+
+  
+.container {
+  
+    width: 100%;
+    height: 100%;
+  }
