@@ -433,28 +433,5 @@ color: #123B53;
 }
     }
 
-    @media (min-width: 1281px) {
-        .continue {
-    width: 136px;
-    height: 69px;
-    left: 444px;
-    top: 661px;
-    padding: 0px 10px;
-
-    /* Dark/100 */
-    background: #A9DEEE;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 150%;
-    z-index: 10;
-/* identical to box height, or 27px */
-
-
-/* Grey/100 */
-
-color: #123B53;
-}
-    }
+  
 </style>
