@@ -621,9 +621,7 @@ color: #123B53;
 }
 
 .tag {
-
 padding: 13px 15px;
-
 width: 121px;
 height: 57px;
 top: 90px;
@@ -798,7 +796,7 @@ color: #FFFFFF;
 .profilebutton {
     display: block;
     padding: 21px 30px;
-width: 90%;
+    width: 90%;
     height: 69px;
     left: 461px;
     margin: 80px 10px 20px 10px;

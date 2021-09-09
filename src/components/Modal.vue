@@ -54,7 +54,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(39, 60, 72, 0.8);
+backdrop-filter: blur(30px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +67,7 @@
     display: flex;
     flex-direction: column;
     width: 566px;
-    height: 606px;
+    height: 566px;
     
   }
 

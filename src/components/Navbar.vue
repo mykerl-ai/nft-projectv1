@@ -17,11 +17,19 @@
            
         </div>
          <button @click="this.$router.push({name: 'Connect'})" v-show="!connect" class="connect lg:ml-32 -mt-5">Connect Wallet</button>
-            <div v-show="connect" class="upload lg:ml-16 -mt-5">Upload Art</div>
-            <div v-show="connect" class="profile"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.5 27.5C5.5 23.375 11 23.375 13.75 20.625C15.125 19.25 11 19.25 11 12.375C11 7.79213 12.8329 5.5 16.5 5.5C20.1671 5.5 22 7.79213 22 12.375C22 19.25 17.875 19.25 19.25 20.625C22 23.375 27.5 23.375 27.5 27.5" stroke="#A9DEEE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div>
+            <button  @click="this.$router.push({name: 'Upload'})" v-show="connect" class="upload lg:ml-9 md:-ml-40 lg:-ml-0 -mt-5">Upload Art</button>
+            <button @click="drop = !drop" v-show="connect" class="profile md:-ml-52 lg:-ml-0"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 27.5C5.5 23.375 11 23.375 13.75 20.625C15.125 19.25 11 19.25 11 12.375C11 7.79213 12.8329 5.5 16.5 5.5C20.1671 5.5 22 7.79213 22 12.375C22 19.25 17.875 19.25 19.25 20.625C22 23.375 27.5 23.375 27.5 27.5" stroke="#A9DEEE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div v-show="drop" class="dropdown md:-ml-52 lg:-ml-0">
+                    <button class="drop">Profile</button>
+                    <button class="drop">Settings</button>
+                    <button class="drop">My Uploads</button>
+                    <button class="drop">My Bids</button>
+                    <div class="line"></div>
+                    <button class="drop">Disconnect & Sign Out</button>
+            </div>
 
   </header>
 </template>
@@ -30,7 +38,8 @@
 export default {
     data(){
         return {
-            connect: false,
+            connect: true,
+            drop: false,
         }
     }
 
@@ -69,11 +78,12 @@ background: #A9DEEE;
 
 .profile {
     position: absolute;
+    background: #123B53;
     width: 69px;
     height: 69px;
     border: 1px solid#A9DEEE;
     padding: 15px 17px;
-    left: 996px;
+    left: 976px;
     top: 47.6px;
 }
 
@@ -159,6 +169,41 @@ position: absolute;
         z-index: 10;
  }
 
+ .dropdown {
+     position: absolute;
+     width: 318px;
+     height: 380px;
+     left: 726px;
+     top: 129px;
+     background: #123B53;
+ }
+
+ .drop {
+     display: inline-block;
+     width: 100%;
+     font-family: Nunito Sans;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+         padding: 10px 0px;
+
+    /* Screen/100 */
+    color: #FAFAFA;
+    margin: 6px 12px 12px -1px;
+ }
+
+ .drop:hover {
+     background: linear-gradient(90deg, rgba(169, 222, 238, 0.2) 0%, rgba(169, 222, 238, 0) 100%);
+ }
+
+ .line {
+     width: 90%;
+     border: 2px solid rgba(255, 255, 255, 0.2);
+     margin: 30px 20px 4px 20px;
+ }
+
  @media (min-width: 768px) and (max-width: 1024px) {
      header {
          margin-left: -90px;
@@ -183,6 +228,17 @@ position: absolute;
 
       margin: -12px 0px -12px -50px;
 
+}
+
+.profile {
+    position: absolute;
+    background: #123B53;
+    width: 69px;
+    height: 69px;
+    border: 1px solid#A9DEEE;
+    padding: 15px 17px;
+    left: 986px;
+    top: 47.6px;
 }
  }
 </style>
