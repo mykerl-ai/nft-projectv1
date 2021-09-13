@@ -124,11 +124,11 @@
                 Load More
             </button>
 
-            <Footer class="footer"/>
+     
 
     </div>
 
-   
+          <Footer class="footer"/>
   
 </template>
 
@@ -144,7 +144,8 @@ export default {
 <style scoped>
 
     .footer {
-        top: 1400px;
+        top: 3000px;
+        margin-top: 500px;
     }
 
     .load {
