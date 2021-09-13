@@ -7,6 +7,14 @@
             </div>
         </router-link>
 
+        <button class="hamburger">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 7.5L12.5 7.5" stroke="#123B53" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 15L5 15" stroke="#123B53" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 22.5L17.5 22.5" stroke="#123B53" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
         <div class="navigation flex md:gap-16 lg:gap-40 md:-ml-12 lg:-ml-0">
             <div class="navlinks ml-64 sm:hidden md:flex gap-16">
                 <router-link :to="{name: 'Home'}">Marketplace</router-link>
@@ -23,14 +31,13 @@
                 </svg>
             </button>
             <div v-show="drop" class="dropdown md:-ml-52 lg:-ml-0">
-                    <button class="drop">Profile</button>
+                    <button @click="this.$router.push({name: 'Profile'})" class="drop">Profile</button>
                     <button class="drop">Settings</button>
-                    <button class="drop">My Uploads</button>
+                    <button @click="this.$router.push({name: 'Profile'})" class="drop">My Uploads</button>
                     <button class="drop">My Bids</button>
                     <div class="line"></div>
                     <button class="drop">Disconnect & Sign Out</button>
             </div>
-
   </header>
 </template>
 
@@ -47,6 +54,11 @@ export default {
 </script>
 
 <style scoped>
+
+.hamburger {
+    display: none;
+}
+
 .upload {
     position: absolute;
 padding: 21px 0px;
@@ -240,5 +252,53 @@ position: absolute;
     left: 986px;
     top: 47.6px;
 }
+.hamburger {
+    display: none;
+}
+ }
+
+ @media (min-width: 320px) and (max-width: 480px) {
+     .navigation, .connect, .upload, .profile, .dropdown {
+         display: none;
+     }
+
+     
+.logo{
+    position: absolute;
+    width: 51px;
+    height: 41px;
+    left: 4px;
+    top: 60px;
+}
+
+.sitehead {
+    display: block;
+    position: absolute;
+    width: 74px;
+    height: 33px;
+    left: 60px;
+    top: 58px;
+
+    font-family: Maven Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+/* identical to box height */
+
+
+/* Primary/100 */
+
+    color: #A9DEEE;
+
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    left: 282px;
+    top: 67.6px;
+}
+
  }
 </style>

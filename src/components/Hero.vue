@@ -12,10 +12,10 @@
           <div class="rectangle md:-ml-24 lg:-ml-0">
               <div class="sidebarimage"></div>
               <div class="sidebarinfo">
-                  <p class="infotext md:ml-8 md:my-6">A Crushed Eternal</p>
+                  <p class="infotext ml-4 my-4 md:ml-8 md:my-6">A Crushed Eternal</p>
                   <div class="infobox">
-                      <span class="md:my-4 md:mx-6">Current Bid </span>
-                      <h6 class="md:my-12 md:mx-6">2.781 ETH</h6>
+                      <span class="my-4 mx-6">Current Bid </span>
+                      <h6 class="my-12 mx-6">2.781 ETH</h6>
                   </div>
               </div>
           </div>
@@ -257,5 +257,218 @@ backdrop-filter: blur(90px);
         color: #FFFFFF;
 
      }
+ }
+
+ @media (min-width: 320px) and (max-width: 480px) {
+
+        .hero {
+    position: absolute;
+    width: 100%;
+    height: 678px;
+    left: 0;
+    top: 156px;
+    background: none;
+}
+
+       .sidebar {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1074.17px;
+        left: 72px;
+        top: -496.2px;
+        background: url('../assets/tab.png');
+        background-repeat: no-repeat;
+
+     }
+
+     .sidebarimage {
+         position: absolute;
+         width: 250px;
+         height: 250px;
+         left: 17px;
+         top: 14px;
+
+         background: url('../assets/sidebar.png');
+     }
+
+     .rectangle {
+         position: absolute;
+        width: 280px;
+        height: 280px;
+        left: -10px;
+        top: 530px;
+        background: rgba(250, 250, 250, 0.15);
+        backdrop-filter: blur(90px);
+/* Note: backdrop-filter has minimal browser support */
+     }
+
+      .sidebarinfo {
+         position: absolute;
+        width: 258px;
+        height: 183px;
+        left: -40px;
+        top: 136px;
+
+        /* Dark/100 */
+
+        background: #123B53;
+        box-shadow: -30px 20px 100px rgba(18, 59, 83, 0.25);
+     }
+
+     .infotext {
+         position: absolute;
+         font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 170%;
+        text-align: center;
+        /* identical to box height, or 31px */
+
+
+        /* White/100 */
+
+        color: #FFFFFF;
+
+     }
+
+     .infobox {
+        position: absolute;
+        width: 205px;
+        height: 82px;
+        left: 25px;
+        top: 67px;
+
+        /* Primary/10 */
+
+        background: rgba(169, 222, 238, 0.1);
+     }
+
+      span {
+         position: absolute;
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height */
+
+
+        /* Screen/60 */
+
+        color: rgba(250, 250, 250, 0.6);
+
+     }
+
+     h6 {
+         font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 150%;
+        /* identical to box height, or 30px */
+
+
+        /* White/100 */
+
+        color: #FFFFFF;
+
+     }
+
+      .heroImage {
+         display: none;
+     } 
+     
+     .herotext {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 148px;
+        left: 0;
+        top: 380px;
+    }
+
+    h1 {
+        position: absolute;
+        font-family: Maven Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 140%;
+        text-align: left;
+        text-justify: auto;
+        margin: 0 15px;
+        /* or 74px */
+
+
+        /* White/100 */
+
+        color: #FFFFFF;
+    }
+
+    .body {
+        position: absolute;
+        top: 115px;
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: left;
+        text-justify: auto;
+        margin: 0 15px;
+        /* or 18px */
+
+
+        /* Screen/80 */
+
+        color: rgba(250, 250, 250, 0.8);
+    }
+
+    button {
+        padding: 21px 30px;
+
+        position: absolute;
+        width: 178px;
+        height: 65px;
+        top: 190px;
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 150%;
+        margin-left: 20px;
+        /* identical to box height, or 27px */
+
+        text-align: center;
+
+        /* Dark/100 */
+
+        color: #123B53;
+        /* Primary/100 */
+
+        background: #A9DEEE;
+    }
+
+    .see {
+        position: absolute;
+        height: 25px;
+        left: 216px;
+        top: 204px;
+
+/* Nunito Sans / Bold / Display */
+
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 25px;
+/* identical to box height, or 156% */
+        color: #A9DEEE;
+    }
+
+
+
  }
 </style>

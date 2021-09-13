@@ -27,16 +27,16 @@
           <div class="numbers flex gap-4">
           <div class="open">
              <p>Open Bid</p>
-             <div class="eth w-full flex gap-16 bg-glass">
-                 <p class="m-2">e.g 0.2</p>
-                 <h6 class="mt-10">ETH</h6>
+             <div class="eth w-full flex gap-16">
+                 <input class="bg-glass eth w-full input focus:bg-darkblue focus:outline-none text-lightblue focus:text-lightblue" placeholder="e.g 0.2 SOL" name="title" type="text">
+
              </div>
           </div>
           <div class="open">
               <p>List Price</p>
-              <div class="eth w-full flex gap-16 bg-glass">
-                  <p class="m-2">e.g 0.2</p>
-                  <h6 class="mt-10">ETH</h6>
+              <div class="eth w-full flex gap-0">
+                  <input class="bg-glass eth w-full  input focus:bg-darkblue focus:outline-none text-lightblue focus:text-lightblue" placeholder="e.g 0.2 SOL" name="title" type="text">
+    
               </div>
           </div>
           </div>
@@ -53,7 +53,7 @@
 
   </div>
 
-  <Footer class="footer"/>
+  <!-- <Footer class="footer"/> -->
 
     <Modal
     v-if="isModalVisible"
@@ -71,7 +71,7 @@
          <form action="">
               <p class="mt-16">Select Date</p>
             <div class="select">
-                <select>
+                <select class="focus:bg-darkblue focus:outline-none text-lightblue focus:text-lightblue">
                     <option value="1"></option>
                     <option value="2">No JS</option>
                     <option value="3">Nice!</option>
@@ -79,7 +79,7 @@
             </div>
             <p class="mt-8">Select Date</p>
             <div class="select mt-3">
-                <select>
+                <select class="focus:bg-darkblue focus:outline-none text-lightblue focus:text-lightblue">
                     <option value="1"></option>
                     <option value="2">No JS</option>
                     <option value="3">Nice!</option>
@@ -98,10 +98,10 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue'
-import Footer from '@/components/Footer.vue'
+// import Footer from '@/components/Footer.vue'
 import Modal from '@/components/Modal.vue'
 export default {
-    components: {Navbar, Footer, Modal},
+    components: {Navbar, Modal},
     data(){
         return {
             isModalVisible: false,
@@ -132,7 +132,8 @@ export default {
 }
 
 .footer {
-    top: 1000px;
+    /* margin-top: 157000px; */
+    display: none;
 }
 
 
@@ -383,9 +384,7 @@ select {
   cursor: pointer;
 }
 /* Remove IE arrow */
-select::-ms-expand {
-  display: none;
-}
+
 /* Custom Select wrapper */
 .select {
   position: relative;
@@ -433,7 +432,8 @@ color: #FFFFFF;
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .footer {
-    top: 1600px;
+    /* top: 1600px; */
+    display: none;
     }
 
     .buttons {

@@ -488,4 +488,54 @@ export default {
   }
 
    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+            .bar {
+              position: absolute;
+      width:10%;
+      height: 147px;
+      top: 765px;
+      height: 135px;
+      }
+
+      .crypto {
+        position: absolute;
+        width: 168.49px;
+        height: 23.7px;
+        left: 7.81%;
+        right: 33.68%;
+        top: 18.09%;
+        bottom: 81.26%;
+        background: url('../assets/crypto.png');
+      }
+
+      .sia {
+        display: block;
+        position: absolute;
+        width: 43.26px;
+        height: 24.52px;
+        left: 50.81%;
+        background: url('../assets/sia.png');
+      }
+
+      .binance {
+        position: absolute;
+        width: 175.65px;
+        height: 33.89px;
+        left: 7.81%;
+        top: 18.09%;
+
+        background: url('../assets/binance.png');
+      }
+
+      .valley {
+       position: absolute;
+        width: 165.61px;
+        height: 31.77px;
+      left: 68.81%;
+      right: 7.81%;
+      top: 18.15%;
+      background: url('../assets/valley.png');
+      }
+   }
 </style>
