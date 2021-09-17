@@ -11,14 +11,14 @@
       </div>
   </div>
 
-  <div class="wallets md:mt-16 lg:mt-0 grid lg:grid-cols-3 md:px-44 lg:px-0 md:grid-cols-1 md:gap-y-10 lg:gap-y-0 lg:gap-1">
+  <div class="wallets md:mt-16 lg:mt-0 grid lg:grid-cols-3 md:px-44 lg:px-0 md:grid-cols-1 grid-cols-1 gap-9 px-6 md:gap-y-10 lg:gap-y-0 lg:gap-1">
       <button class="wallet focus:ring-4 focus:ring-lightblue-600">
-          <div class="metamask md:mx-16 md:my-8"></div>
+          <div class="metamask md:mx-16 md:my-8 mx-16"></div>
           <p class="walletname">MetaMask</p>
       </button>
       <button class="wallet focus:ring-4 focus:ring-lightblue-600">
-          <div class="rec md:mx-10 md:-mt-5 py-3"><p class="px-8">Recommended</p></div>
-          <p class="walletname md:mt-40 md:mb-24">FortMatic</p>
+          <div class="rec mx-10 md:-mt-5 -mt-12 py-3"><p class="px-8">Recommended</p></div>
+          <p class="walletname md:mt-40 md:mb-24 mt-40">FortMatic</p>
       </button>
       <button class="wallet focus:ring-4 focus:ring-lightblue-600">
           <div class="fortmatic md:mx-16 md:my-8"></div>
@@ -44,12 +44,12 @@
     </template>
 
     <template v-slot:body>
-      <div v-if="!success" class="addressinput mt-6 pl-20 pt-8 pb-6 flex">
-          <i class="-mr-16 mt-7 z-10"><svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div v-if="!success" class="addressinput mt-6 ml-4 md:ml-0 md:pl-20  pt-8 pb-6 flex">
+          <i class="md:-mr-16 mt-7 z-10 -mr-24"><svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.02844 27.625C6.02844 26.6857 6.40158 25.7848 7.06577 25.1206C7.72996 24.4565 8.6308 24.0833 9.57011 24.0833H28.6951" stroke="#A9DEEE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9.57011 2.83331H28.6951V31.1666H9.57011C8.6308 31.1666 7.72996 30.7935 7.06577 30.1293C6.40158 29.4651 6.02844 28.5643 6.02844 27.625V6.37498C6.02844 5.43567 6.40158 4.53483 7.06577 3.87064C7.72996 3.20645 8.6308 2.83331 9.57011 2.83331V2.83331Z" stroke="#A9DEEE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg></i>
-          <input v-model="address"  type="text" class="input" placeholder="Enter wallet address">
+          <input v-model="address"  type="text" class="input ml-20 md:ml-0" placeholder="Enter wallet address">
       </div>
 
       <p v-show="!address && !success" class="or mt-2">-or-</p>
@@ -266,25 +266,15 @@ color: #FFFFFF;
       
 .button {
     position: absolute;
-  
-
-    /* Dark/100 */
-
-
     padding: 21px 30px;
-
 width: 214px;
 height: 69px;
-
-
-/* Dark/100 */
-
 background: #123B53;
 font-family: Nunito Sans;
 font-style: normal;
 font-weight: 800;
-font-size: 18px;
-line-height: 150%;
+font-size: 16px;
+line-height: 100%;
 /* identical to box height, or 27px */
 
 
@@ -433,5 +423,100 @@ color: #123B53;
 }
     }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .continue {
+            width: 270px;
+            height: 69px;
+            left: 444px;
+            top: 661px;
+            font-size: 18px;
+            line-height: 150%;
+            color: #123B53;
+}
+
+.head {
+    font-size: 24px;
+  
+ }
+
+ .headertext {
+    font-size: 14px;
+}
+
+.addressinput {
+        width: 90%;
+        height: 115px;
+    }
+
+    .book {
+        width: 34px;
+        height: 34px;
+        background: url('../assets/book.png');
+    }
+
+    .input {
+        width: 90%;
+        height: 65px;
+        background: #123B53;
+        padding: 0px 80px;
+    }
+
+    ::placeholder {
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 100%;
+        color: rgba(250, 250, 250, 0.6);
+    }
+
+    input[type=text]{
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 100%;
+        color: #ffff
+    }
+
+    .or {
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        color: rgba(250, 250, 250, 0.8);
+    }
+
+        .direct {
+            width: 274px;
+            height: 69px;
+            background: rgba(169, 222, 238, 0.1);
+            font-family: Nunito Sans;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: #A9DEEE;
+        }
+
+
+        .connect {
+            width: 274px;
+            height: 69px;
+            padding: 21px 30px;
+            background: #A9DEEE;
+            font-family: Nunito Sans;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: #123B53;
+        }
+
+}
   
 </style>

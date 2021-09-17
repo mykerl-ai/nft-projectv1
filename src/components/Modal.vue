@@ -102,4 +102,16 @@ backdrop-filter: blur(30px);
   .modal-fade-leave-active {
     transition: opacity .5s ease;
   }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+        .modal {
+    background: #123B53;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    height: 545px;
+    
+  }
+  }
 </style>

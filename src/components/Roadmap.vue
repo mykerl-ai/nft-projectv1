@@ -2,9 +2,9 @@
 <div class="mapgloss"></div>
     <h2 class="text-5xl font-bold">Roadmap</h2>
     <h2 class="heading md:-ml-24 lg:-ml-0 text-5xl font-bold">How to <span class="text-lightblue"> Collecting </span> Art at Nartz.</h2>
-        <div class="map grid grid-cols-3 gap-2">
+        <div class="map grid grid-col-1 md:grid-cols-3 grid-flow-row gap-2 px-6">
             <div v-for="map in maps" :key="map.id"  class="mapbox md:-ml-16 lg:-ml-0">
-                <div class="xl:ml-32 md:ml-16">
+                <div class="xl:ml-32 md:ml-16 ml-24">
                 <div class="boxshadow ml-2"></div>
                 <div class="box  -mt-14">{{map.id}}</div>
                 </div>
@@ -48,7 +48,7 @@ transform: rotate(9.08deg);
     h2 {
        position: absolute;
         left: 470px;
-        top: 2800px;
+        top: 3100px;
 
         /* Maven Pro / Bold / H2 */
 
@@ -72,8 +72,8 @@ transform: rotate(9.08deg);
 
     .map {
        position: absolute;
-        left: 80px;
-        top: 2950px;
+        left: 30px;
+        top: 3250px;
     }
 
     .mapbox {
@@ -174,7 +174,7 @@ transform: rotate(9.08deg);
         display: block;
         position: absolute;
         left: 248px;
-        top: 3000px;
+        top: 3100px;
         width: 483px;
         height: 148px;
         /* Maven Pro / Bold / H2 */
@@ -196,7 +196,7 @@ transform: rotate(9.08deg);
         .map {
        position: absolute;
         left: 90px;
-        top: 3200px;
+        top: 3360px;
     }
 
     .mapbox {
@@ -245,4 +245,82 @@ transform: rotate(9.08deg);
     }
     }
    
+       @media (min-width: 320px) and (max-width: 480px) {
+           h2 {
+            display: none;
+        }
+
+        .heading {
+        display: block;
+        position: absolute;
+width: 325px;
+height: 96px;
+left: 25px;
+top: 3152px;
+
+/* Maven Pro / Bold / H3 */
+
+font-family: Maven Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 34px;
+line-height: 140%;
+/* or 48px */
+
+text-align: center;
+
+/* White/100 */
+
+color: #FFFFFF;
+        }
+
+        .map {
+       position: absolute;
+        left: 25px;
+        top: 3300px;
+    }
+
+    .mapbox {
+       
+        width: 275px;
+        height: 326px;
+        
+         padding: 35px 20px;
+        /* Primary/10 */
+        background: rgba(169, 222, 238, 0.1);
+    }
+
+     .box {
+       
+        width: 45px;
+        height: 45px;
+        top: 35px;
+
+        /* Primary/100 */
+
+        background: #A9DEEE;
+        font-family: Maven Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        /* identical to box height, or 27px */
+
+        text-align: center;
+
+        /* Dark/100 */
+
+        color: #123B53;
+    }
+
+    .boxshadow {
+        width: 45px;
+        height: 45px;
+        top: 42px;
+
+        /* Primary/20 */
+
+        background: rgba(169, 222, 238, 0.2);
+    }
+       }
 </style>

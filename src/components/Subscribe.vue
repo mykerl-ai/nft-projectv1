@@ -1,12 +1,12 @@
 <template>
   <div class="rectangle md:-ml-12 lg:-ml-0">
       <div class="subgloss"></div>
-      <h2 class="-mt-72 mx-40 px-6 text-center">Subscribe to our Newsletter</h2>
+      <h2 class="-mt-72 md:mx-40 md:px-6 text-center">Subscribe to our Newsletter</h2>
       <div class="input md:-ml-24 lg:-ml-0 -mt-12">
           <form class="w-full h-full bg-darkblue" action="">
               <div class="mail"></div>
-              <input class="w-full h-full bg-darkblue px-32 focus:outline-none text-white" type="text" placeholder="Email address here">
-              <button class="formbtn -ml-44 my-4">Subscribe</button>
+              <input class="w-full h-full bg-darkblue px-24 md:px-32 focus:outline-none text-white" type="text" placeholder="Email address here">
+              <button class="formbtn -ml-72 md:-ml-44 mt-40 md:my-4">Subscribe</button>
           </form>
       </div>
   </div>
@@ -24,7 +24,7 @@ export default {
     width: 85%;
     height: 441px;
     left: 100px;
-    top: 3400px;
+    top: 3700px;
 
     background: #A9DEEE;
 }
@@ -117,10 +117,12 @@ h2 {
     width: 81%;
     height: 441px;
     left: 100px;
-    top: 3660px;
+    top: 3860px;
 
     background: #A9DEEE;
 }
+
+
 
 .input {
     position: absolute;
@@ -143,4 +145,85 @@ h2 {
     background-repeat: no-repeat;
 }
     }
+
+@media (min-width: 320px) and (max-width: 480px) {
+.rectangle {
+    position: absolute;
+   width: 325px;
+    height: 395px;
+    left: 25px;
+    top: 4480px;
+
+    background: #A9DEEE;
+}
+
+h2 {
+    position: absolute;
+    font-family: Maven Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 140%;
+    color: #123B53;
+}
+
+.input {
+    position: absolute;
+    width: 292px;
+    height: 74px;
+    left: 16px;
+    top: 212px;
+    /* Dark/100 */
+    background: #123B53;
+}
+
+.mail {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 25%;
+    /* Primary/100 */
+    background: url('../assets/mail.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.formbtn {
+    padding: 21px 30px;
+    position: absolute;
+    width: 292px;
+    height: 65px;
+
+
+
+/* Primary/100 */
+
+    background: #A9DEEE;
+    font-family: Nunito Sans;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+text-align: center;
+
+/* Dark/100 */
+
+color: #123B53;
+}
+
+::placeholder {
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 90%;
+/* identical to box height, or 18px */
+/* Screen/60 */
+    color: rgba(250, 250, 250, 0.6);
+}
+}
+
 </style>

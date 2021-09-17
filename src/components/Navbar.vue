@@ -45,7 +45,7 @@
 export default {
     data(){
         return {
-            connect: true,
+            connect: false,
             drop: false,
         }
     }
@@ -141,7 +141,7 @@ color: #A9DEEE;
 a {
   font-family: Nunito Sans;
 font-style: normal;
-font-weight: normal;
+font-weight: bold;
 font-size: 16px;
 line-height: 100%;
 /* identical to box height, or 18px */
@@ -149,7 +149,7 @@ line-height: 100%;
 
 /* Screen/60 */
 
-color: rgba(250, 250, 250, 0.6);
+color: rgba(255, 255, 255);
 
 }
 

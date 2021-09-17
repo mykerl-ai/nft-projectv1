@@ -15,7 +15,7 @@
       <div class="miniHero md:-ml-40 lg:-ml-0"><div class="miniHeroImage md:-ml-2 lg:-ml-0"></div></div>
       <div class="info md:-ml-40 lg:-ml-0">
         <p class="mx-4 mt-5">Special NFT #1 </p>
-        <div class="inforectangle  mx-4 mt-6">
+        <div class="inforectangle  mx-4 mt-2 md:mt-6">
           <p class="my-3 ml-4">cyberpunk girl</p>
           <h6 class="ml-4">190 ETH <span>($463,888)</span></h6>
 
@@ -63,11 +63,12 @@ export default {
     width: 100%;
     height: 186px;
     left: 0px;
-    top: 900px;
+    top: 680px;
 
     background: rgba(250, 250, 250, 0.1);
     backdrop-filter: blur(90px);
   }
+  
 
   .lightgloss {
     position: absolute;
@@ -98,7 +99,7 @@ export default {
     width: 593px;
     height: 600px;
     left: -43px;
-    top: 1086px;
+    top: 865px;
 
     background: url('../assets/Vector.png');
   }
@@ -108,7 +109,7 @@ export default {
     width: 509px;
     height: 509px;
     left: 130px;
-    top: 1226px;
+    top: 1006px;
 
     background: rgba(250, 250, 250, 0.15);
     backdrop-filter: blur(90px);
@@ -128,7 +129,7 @@ export default {
     width: 274px;
     height: 179px;
     left: 80px;
-    top: 1297px;
+    top: 1197px;
 
 /* Dark/100 */
 
@@ -206,7 +207,7 @@ export default {
     width: 488px;
     height: 203px;
     left: 62.77%;
-    top: 1190px;
+    top: 995px;
   }
 
   .infohead2 {
@@ -476,8 +477,8 @@ export default {
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 150%;
+    font-size: 14px;
+    line-height: 100%;
     /* identical to box height, or 27px */
 
     text-align: center;
@@ -490,11 +491,11 @@ export default {
    }
 
     @media (min-width: 320px) and (max-width: 480px) {
-            .bar {
-              position: absolute;
-      width:10%;
+      .bar {
+      position: absolute;
+      width:100%;
       height: 147px;
-      top: 765px;
+      top: 835px;
       height: 135px;
       }
 
@@ -502,9 +503,9 @@ export default {
         position: absolute;
         width: 168.49px;
         height: 23.7px;
-        left: 7.81%;
+        left: 4.81%;
         right: 33.68%;
-        top: 18.09%;
+        top: 48.09%;
         bottom: 81.26%;
         background: url('../assets/crypto.png');
       }
@@ -512,18 +513,19 @@ export default {
       .sia {
         display: block;
         position: absolute;
-        width: 43.26px;
-        height: 24.52px;
-        left: 50.81%;
+         width: 61.47px;
+        height: 35.04px;
+        left: 30px;
         background: url('../assets/sia.png');
+        background-repeat: no-repeat;
       }
 
       .binance {
         position: absolute;
-        width: 175.65px;
+         width: 175.65px;
         height: 33.89px;
-        left: 7.81%;
-        top: 18.09%;
+        left: 45.81%;
+        top: 6.09%;
 
         background: url('../assets/binance.png');
       }
@@ -532,10 +534,182 @@ export default {
        position: absolute;
         width: 165.61px;
         height: 31.77px;
-      left: 68.81%;
+      left: 52.81%;
       right: 7.81%;
-      top: 18.15%;
+      top: 48.15%;
       background: url('../assets/valley.png');
       }
+
+      .sidebar {
+        left: -150px;
+        margin-top: 105px;
+        height: 345px;
+      }
+
+      
+  .miniHero {
+    position: absolute;
+    width: 279px;
+    height: 279px;
+    left: 80px;
+    top: 1046px;
+
+    background: rgba(250, 250, 250, 0.15);
+    backdrop-filter: blur(90px);
+  }
+
+  .miniHeroImage {
+    position: absolute;
+    width: 242.17px;
+    height: 242.17px;
+    left: 23.6px;
+    top: 23.0px;
+     background: url('../assets/hero.png');
+  }
+  
+
+    .info {
+    position: absolute;
+    width: 245px;
+height: 162px;
+    left: 40px;
+    top: 1000px;
+
+/* Dark/100 */
+
+    background: #123B53;
+    box-shadow: -30px 20px 100px rgba(18, 59, 83, 0.25);
+   
+
+  }
+
+  .info p {
+     font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 170%;
+/* identical to box height, or 31px */
+
+
+/* White/100 */
+
+    color: #FFFFFF;
+  }
+
+  .inforectangle {
+    position: absolute;
+    width: 205px;
+    height: 82px;
+    
+    
+
+    /* Primary/10 */
+
+    background: rgba(169, 222, 238, 0.1);
+  }
+
+  .inforectangle p{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* Screen/60 */
+
+    color: rgba(250, 250, 250, 0.6);
+  }
+
+  .inforectangle h6 {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+
+
+    /* White/100 */
+
+    color: #FFFFFF;
+
+  }
+
+  .inforectangle h6 span {
+    color: rgba(250, 250, 250, 0.6);
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .infohead {
+    display: none;
+  }
+
+  .infohead2 {
+    display: block;
+    position: absolute;
+    width: 279px;
+    height: 98px;
+    left: 25px;
+    top: 1359px;
+  }
+
+  .infohead2 h2 {
+    /* Maven Pro / Bold / H2 */
+
+   font-family: Maven Pro;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 34px;
+   line-height: 140%;
+    color: rgba(169, 222, 238, 1)
+    /* or 74px */
+  }
+
+  .infohead2 p {
+    /* Nunito Sans / Regular / Label */
+
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+   
+    /* Screen/80 */
+
+    color: rgba(250, 250, 250, 0.8);
+  }
+
+  .infobtn2 {
+    padding: 21px 30px;
+    width: 234px;
+    height: 69px;
+    left: 856px;
+    top: 1559px;
+
+    /* Primary/100 */
+
+    background: #A9DEEE;
+  }
+
+  .infobtn2 p {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 27px */
+
+    text-align: center;
+
+    /* Dark/100 */
+
+    color: #123B53;
+  }
    }
 </style>

@@ -1,6 +1,14 @@
 <template>
   <div class="hero">
 
+      <div class="desktop">
+          <div class="next md:-ml-44 lg:-ml-0"></div>
+          <div class="flex mt-24 ml-2 lg:ml-32 md:gap-2 lg:gap-32">
+              <h4 class="text-lightblue ml-12">Powered by</h4>
+              <div class="solana"></div>
+          </div>
+      </div>
+
       <div class="herotext">
           <h1 class="md:-ml-14 lg:-ml-0">Modern Concept Artist Connector.</h1>
           <p class="body md:-ml-14 lg:-ml-0 md:pr-24 lg:pr-0">Discover 1000+ digital artwork and collect all of them directly in one platform with safe payment.</p>
@@ -20,7 +28,7 @@
               </div>
           </div>
       </div>
-      <div class="heroImage"></div>
+      <!-- <div class="heroImage"></div> -->
   </div>
 </template>
 
@@ -33,13 +41,12 @@ export default {
 <style scoped>
 .hero {
     position: absolute;
-width: 77%;
+width: 100%;
 height: 678px;
-left: 176px;
-top: 156px;
+left: 0px;
+top: 0px;
 background-repeat: no-repeat;
-background: rgba(250, 250, 250, 0.15);
-backdrop-filter: blur(90px);
+background: url('../assets/nextverse.png');
 }
 
 .herotext {
@@ -60,15 +67,75 @@ backdrop-filter: blur(90px);
     background: url('../assets/hero.png')
 }
 
+.desktop {
+    position: absolute;
+width: 100%;
+left: 0px;
+top: 167px;
+}
+
+.next {
+    background: url('../assets/nextverse1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 130px;
+    width: 913px;
+    height: 202px;
+    left: 525px;
+}
+
+
+.desktop h4 {
+    font-family: Maven Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 53px;
+    line-height: 140%;
+}
+
+
+.solana {
+    background: url('../assets/solana.png');
+    width: 617px;
+    height: 124px;
+}
+
+
  @media (min-width: 768px) and (max-width: 1024px) {
      .hero {
          width: 100%;
          left: 0;
-         background: none;
      }
 
+     .desktop {
+         display: block;
+     }
+
+    .next {
+    background: url('../assets/nextverse2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    width: 913px;
+    height: 202px;
+    left: 0;
+}
+
+.solana {
+    background: url('../assets/solana1.png');
+}
+
+.desktop h4 {
+    font-family: Maven Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 140%;
+}
+
+
     .herotext {
-        display: block;
+        display: none;
         position: absolute;
         width: 429px;
         height: 148px;
@@ -153,7 +220,7 @@ backdrop-filter: blur(90px);
      }
 
      .sidebar {
-        display: block;
+        display: none;
         position: absolute;
         width: 100%;
         height: 10074.17px;
@@ -268,6 +335,10 @@ backdrop-filter: blur(90px);
     left: 0;
     top: 156px;
     background: none;
+}
+
+    .desktop {
+        display: none;
 }
 
        .sidebar {
